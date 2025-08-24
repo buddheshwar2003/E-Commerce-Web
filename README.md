@@ -3,7 +3,6 @@
 A simple **React + TypeScript + Firebase** project that lets users:
 
 - Add products to cart
-- Store cart data in **Firestore** (per logged-in user)
 - Sync cart across sessions
 - Clear cart with one click
 
@@ -13,7 +12,6 @@ A simple **React + TypeScript + Firebase** project that lets users:
 
 - 🔑 User Authentication (Firebase Auth)
 - 🛍️ Add / Remove products from cart
-- 💾 Persistent cart stored in **Firestore**
 - 💻 React Context API for global state
 - 📦 LocalStorage fallback when not logged in
 - 🎨 Tailwind CSS styling (optional)
@@ -40,7 +38,7 @@ npm install
 npm run dev
 ```
 
-### 🔑 Environment Variables Setup
+### 2.🔑 Environment Variables Setup
 
 Create a `.env` file in the **root** of your project (where `package.json` is located).
 
@@ -64,7 +62,7 @@ VITE_FIREBASE_APP_ID=your_app_id
 ---
 ## 🔗 Live Demo
 
-👉 [View Live Site](https://weather-api-website-one.vercel.app//)
+👉 [View Live Site](https://e-commerce-web-omega-two.vercel.app/)
 
 ---
 
