@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const PopUp = ({ onClose }: any) => {
   return (
     <section
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[999]"
       onClick={onClose}
     >
       <section className="bg-white p-12 rounded shadow-lg flex justify-center items-center flex-col gap-2 ">

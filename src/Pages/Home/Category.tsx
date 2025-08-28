@@ -15,7 +15,7 @@ const Category = () => {
   return (
     <section className="bg-blue-500 flex justify-center items-center w-full">
       <section className="flex justify-center flex-col items-center max-container gap-10 py-16">
-        <h1 className="text-white font-bold text-6xl text-center">
+        <h1 className="text-white font-bold text-6xl text-center max-lg:text-5xl">
           BROWSE CATEGORIES
         </h1>
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-5">

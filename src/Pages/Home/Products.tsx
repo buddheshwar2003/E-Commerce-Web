@@ -16,13 +16,13 @@ const Products = () => {
   return (
     <section className="bg-blue-500 w-full justify-center items-center flex ">
       <section className="flex justify-center items-center max-container flex-col gap-10 py-16">
-        <h1 className="text-6xl font-bold uppercase text-white text-center">
+        <h1 className="text-6xl font-bold uppercase text-white text-center max-lg:text-5xl">
           FEATURE PRODUCTS
         </h1>
         {loading ? (
           <div className="h-32 w-32 border-t-transparent border-8 border-white rounded-full animate-spin"></div>
         ) : (
-          <div className="grid justify-center items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-10">
+          <div className="grid justify-center items-center xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 gap-10">
             {products?.map((product: any) => (
               <div
                 key={product.id}

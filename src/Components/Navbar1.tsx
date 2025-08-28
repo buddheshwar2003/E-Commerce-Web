@@ -23,20 +23,27 @@ const Navbar1 = () => {
 
   return (
     <section className="flex justify-center items-center bg-blue-500">
-      <nav className="flex justify-between max-container w-full p-2">
+      <nav className="flex justify-between max-container w-full py-2 lg:px-10 max-lg:px-5">
         <div className="flex justify-center items-center gap-5">
-          <div className="flex justify-center items-center gap-1">
-            <FaHeadphones className="text-white text-lg" />
-            <a href="tel:+916203459703" className="text-white text-base font-semibold">
+          <a
+            href="tel:+916203459703"
+            className="flex justify-center items-center gap-1"
+          >
+            <FaHeadphones className="text-white text-lg" />{" "}
+            <span className="text-white text-base font-semibold max-lg:hidden">
               +91 6203459703
-            </a>
-          </div>
-          <div className="flex justify-center items-center gap-1">
+            </span>
+          </a>
+
+          <a
+            href="mailto:buddheshwar2003@gmail.com"
+            className="flex justify-center items-center gap-1"
+          >
             <LuMail className="text-white text-xl" />
-            <a href="mailto:buddheshwar2003@gmail.com" className="text-white text-base font-semibold">
-             buddheshwar2003@gmail.com
-            </a>
-          </div>
+            <span className="text-white text-base font-semibold max-lg:hidden">
+              buddheshwar2003@gmail.com
+            </span>
+          </a>
         </div>
         <div className="flex justify-center items-center gap-5">
           {user && user?.email ? (
