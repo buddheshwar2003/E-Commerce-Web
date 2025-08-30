@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section className="flex justify-center items-center">
-      <section className="flex justify-evenly items-start py-16 max-container gap-10 w-full max-lg:flex-col max-lg:items-center max-lg:justify-center">
+      <section className="flex justify-evenly items-start py-16 max-md:py-8 max-container gap-10 max-md:gap-4 w-full max-lg:flex-col max-lg:items-center max-lg:justify-center">
         <Link to={"/"}>
-          <h2 className="text-4xl font-bold tracking-wide">
+          <h2 className="text-4xl max-md:text-2xl font-bold tracking-wide">
             ALLx<span className="text-blue-500">MART</span>
           </h2>
           <p className="text-xs font-semibold text-gray-500 tracking-widest">
             AAPKA APNA MART
           </p>
         </Link>
-        <div className="grid gap-8 lg:grid-cols-4 md:grid-cols-2 max-lg:items-start max-lg:justify-center">
+        <div className="grid gap-8 max-md:gap-4 lg:grid-cols-4 md:grid-cols-2 max-lg:items-start max-lg:justify-center">
           <div className="max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col">
             <h2 className="text-blue-500 font-semibold text-lg mb-4">Sale</h2>
             <ul className="space-y-3 max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col">

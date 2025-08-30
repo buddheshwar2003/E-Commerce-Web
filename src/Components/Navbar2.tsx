@@ -30,7 +30,7 @@ const Navbar2 = () => {
           to={"/"}
           className="text-xl flex flex-col justify-center items-center"
         >
-          <h2 className="text-4xl font-bold tracking-wide">
+          <h2 className="text-4xl max-md:text-2xl font-bold tracking-wide">
             ALLx<span className="text-blue-500">MART</span>
           </h2>
           <p className="text-xs font-semibold text-gray-500 tracking-widest">

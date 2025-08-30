@@ -19,16 +19,16 @@ const ProductDetail = () => {
 
   return (
     <div className="flex justify-center items-center p-10">
-      <div className="w-[80%] h-full bg-white rounded-md max-container">
-        <div className="flex h-[70vh] w-full justify-between rounded-md border items-center">
-          <div className="w-[50%] h-full flex justify-center items-center">
+      <div className="w-[80%] max-lg:w-full h-full bg-white rounded-md max-container">
+        <div className="flex max-md:h-full w-full justify-between rounded-md border max-md:flex-col items-center">
+          <div className="w-[50%] h-full flex justify-center items-center max-md:w-full">
             <img
               src={product.image}
               alt={product.model}
               className="h-[80%] w-[80%] object-contain"
             />
           </div>
-          <div className="w-[50%] bg-gray-100 h-full flex justify-center items-start p-12 flex-col gap-6">
+          <div className="w-[50%] bg-gray-100 h-full flex justify-center items-start p-12 max-lg:p-4 flex-col gap-6 max-md:w-full">
             <h2 className="text-2xl font-semibold">{product.title}</h2>
             <p className="text-sm font-bold text-gray-600">${product.price}</p>
             <div className="w-full">
@@ -41,7 +41,7 @@ const ProductDetail = () => {
             </div>
             <div className="flex gap-2 items-center">
               <p>Quantity:</p>
-              <div className="flex gap-1">
+              <div className="flex gap-1 flex-wrap">
                 <button
                   className="border w-8 h-8 flex justify-center items-center text-lg"
                   onClick={() => {
