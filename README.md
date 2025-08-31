@@ -14,7 +14,8 @@ A simple **React + TypeScript + Firebase** project that lets users:
 - 🛍️ Add / Remove products from cart
 - 💻 React Context API for global state
 - 📦 LocalStorage fallback when not logged in
-- 🎨 Tailwind CSS styling (optional)
+- 🎨 Tailwind CSS styling
+- 📱 Fully Responsive
 
 ---
 

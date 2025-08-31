@@ -79,7 +79,7 @@ const AllProducts = () => {
                 </div>
                 <div className="flex justify-center items-center flex-col">
                   <h1 className="text-center text-lg max-md:text-base font-bold text-gray-700 uppercase">
-                    {item.title}
+                    {item.title.slice(0, 40) + "..." }
                   </h1>
                   <p className="text-center text-base max-md:text-sm font-bold text-gray-700 uppercase">
                     ${item.price}

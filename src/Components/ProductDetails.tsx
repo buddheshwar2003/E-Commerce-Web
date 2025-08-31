@@ -18,18 +18,18 @@ const ProductDetail = () => {
   const added = cartItem.some((obj: any) => obj.product.id === product.id);
 
   return (
-    <div className="flex justify-center items-center p-10">
-      <div className="w-[80%] max-lg:w-full h-full bg-white rounded-md max-container">
+    <div className="flex justify-center items-center p-10 max-sm:p-3">
+      <div className=" max-lg:w-full h-full bg-white rounded-md max-container">
         <div className="flex max-md:h-full w-full justify-between rounded-md border max-md:flex-col items-center">
           <div className="w-[50%] h-full flex justify-center items-center max-md:w-full">
             <img
               src={product.image}
               alt={product.model}
-              className="h-[80%] w-[80%] object-contain"
+              className="h-[400px] w-[400px] object-contain"
             />
           </div>
           <div className="w-[50%] bg-gray-100 h-full flex justify-center items-start p-12 max-lg:p-4 flex-col gap-6 max-md:w-full">
-            <h2 className="text-2xl font-semibold">{product.title}</h2>
+            <h2 className="text-2xl max-md:text-xl font-semibold">{product.title}</h2>
             <p className="text-sm font-bold text-gray-600">${product.price}</p>
             <div className="w-full">
               <p className="text-gray-600 flex gap-1">
@@ -62,23 +62,23 @@ const ProductDetail = () => {
               </div>
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex gap-5 max-[832px]:flex-col max-[832px]:w-full">
               {!added ? (
                 <button
-                  className="uppercase border h-10 w-40 font-semibold rounded-md text-blue-500"
+                  className="uppercase border h-10 w-40 max-[832px]:w-full font-semibold rounded-md text-blue-500"
                   onClick={() => addCart(product, cart)}
                 >
                   add to cart
                 </button>
               ) : (
                 <Link
-                  className="uppercase border h-10 w-40 font-semibold rounded-md text-blue-500 flex justify-center items-center"
+                  className="uppercase border h-10 w-40 font-semibold rounded-md max-[832px]:w-full text-blue-500 flex justify-center items-center"
                   to={"/cart"}
                 >
                   go to cart
                 </Link>
               )}
-              <button className="uppercase border h-10 w-40 font-semibold rounded-md bg-blue-500 text-white">
+              <button className="uppercase border h-10 w-40 font-semibold max-[832px]:w-full rounded-md bg-blue-500 text-white">
                 Buy Now
               </button>
             </div>

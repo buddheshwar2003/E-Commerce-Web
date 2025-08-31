@@ -45,9 +45,9 @@ const CartList = () => {
   }
 
   return (
-    <section className="flex justify-center items-center">
-      <section className="max-container w-full flex gap-8 justify-between items-start">
-        <div className="w-[60%]">
+    <section className="flex justify-center items-center px-10 max-lg:px-3">
+      <section className="max-container w-full max-md:flex-col flex gap-8 max-lg:gap-4 justify-between items-start">
+        <div className="w-[60%] max-md:w-full">
           {cartItem.length === 0 ? (
             <div className="p-6 flex justify-center items-center text-4xl h-[400px] text-gray-500">
               🛒 Your cart is empty
@@ -65,15 +65,15 @@ const CartList = () => {
                   <img
                     src={item.product.image}
                     alt={item.product.model}
-                    className="h-32 w-32 object-contain"
+                    className="h-32 w-32 max-sm:h-20 max-sm:w-20 object-contain"
                   />
                 </div>
                 <div className="flex justify-between items-start gap-2 border-2 w-[75%] bg-gray-50 p-5">
                   <div className="flex flex-col justify-center items-start gap-2">
-                    <h2 className="font-semibold text-xl">
-                      {item.product.title}
+                    <h2 className="font-semibold text-xl max-lg:text-lg max-sm:text-base">
+                      {item.product.title.slice(0, 40) + "..." }
                     </h2>
-                    <p className="font-bold text-gray-700 text-base">
+                    <p className="font-bold text-gray-700 text-base max-sm:text-sm">
                       ${item.product.price}
                     </p>
                     <div className="flex gap-1">
@@ -86,7 +86,7 @@ const CartList = () => {
                       >
                         -
                       </button>
-                      <div className="h-8 w-24 flex justify-center items-center border">
+                      <div className="h-8 w-24 flex justify-center max-sm:w-16 items-center border">
                         {item.itemNumber}
                       </div>
                       <button
@@ -100,9 +100,9 @@ const CartList = () => {
                     </div>
 
                     <div className="w-full">
-                      <p className="text-gray-600 w-full flex gap-1">
+                      <p className="text-gray-600 w-full flex gap-1 max-sm:text-sm">
                         Availability :{" "}
-                        <span className="flex items-center gap-1 text-green-700 font-semibold">
+                        <span className="flex items-center justify-center gap-1 text-green-700 font-semibold">
                           In stock <MdDone className="text-xl" />
                         </span>
                       </p>
@@ -116,7 +116,7 @@ const CartList = () => {
             ))
           )}
         </div>
-        <div className="flex flex-col gap-3 w-[40%] bg-gray-100 p-8 mt-5">
+        <div className="flex flex-col gap-3 w-[40%] max-md:w-full bg-gray-100 p-8 mt-5">
           <h2 className="text-xl font-semibold">Order Summary</h2>
           <div className="flex justify-between border-b py-2">
             <p className="text-gray-600">Subtotal</p>
